@@ -1,0 +1,25 @@
+<h2 class="m-2">My Heroes</h2>
+
+
+<div class="row m-2">
+  <div class="col-md-2">
+    <label for="name" class="form-label">Hero name:</label>
+    <input type="text" class="form-control" id="name" #heroName>
+  </div>
+</div>
+<div class="row m-2">
+  <div class="col-md-2">
+    <button class="btn btn-primary btn-sm" (click)="add(heroName.value); heroName.value=''"><i class="bi bi-plus-lg"></i></button>
+  </div>
+</div>
+
+<div class="row justify-content-center">
+  <div *ngFor="let hero of heroes" class="col-md-2 m-1">
+    <button type="button" class="btn btn-primary btn-sm text-start" style="width: 180px" routerLink="/detail/{{hero.id}}">
+      <span class="badge bg-secondary">{{hero.id}}</span> {{hero.name}}
+      <div class="text-end">
+        <button class="btn btn-danger btn-sm" (click)="delete(hero)"><i class="bi bi-trash"></i></button>
+      </div>
+    </button>
+  </div>
+</div>

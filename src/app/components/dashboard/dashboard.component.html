@@ -1,0 +1,9 @@
+<h2 class="text-center">Top Heroes <i class="bi bi-controller"></i></h2>
+
+<div class="row justify-content-center">
+  <div class="col-md-auto" *ngFor="let hero of heroes">
+    <a routerLink="/detail/{{hero.id}}" class="btn btn-primary">
+      {{hero.name}}
+    </a>
+  </div>
+</div>

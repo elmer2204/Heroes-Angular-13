@@ -1,0 +1,19 @@
+<div *ngIf="hero">
+  <div class="card text-white bg-primary m-3" style="max-width: 18rem;">
+    <div class="card-header">{{hero.name | uppercase}} Details</div>
+    <div class="card-body">
+      <h5 class="card-title">ID: <span class="badge bg-secondary">{{hero.id}}</span></h5>
+      <div class="input-group mb-3">
+        <span class="input-group-text" id="basic-addon1">Hero name: </span>
+        <input type="text" class="form-control" [(ngModel)]="hero.name">
+      </div>
+      <p class="card-text" *ngIf="hero.description">{{hero.description}}</p>
+    </div>
+    <div class="card-footer text-end">
+      <button type="button" class="btn btn-danger btn-sm m-1" (click)="goBack()"><i class="bi bi-arrow-return-left"></i></button>
+      <button type="button" class="btn btn-success btn-sm" (click)="save()"><i class="bi bi-file-earmark-text"></i></button>
+    </div>
+  </div>
+</div>
+
+
