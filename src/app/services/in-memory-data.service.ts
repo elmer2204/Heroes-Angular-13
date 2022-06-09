@@ -21,7 +21,10 @@ export class InMemoryDataService implements InMemoryDbService{
       { id: 15, name: 'Spider-man', description: "Peter Parker es hijo de Richard y Mary Parker, agentes de la CIA y " +
           "posteriormente de S.H.I.E.L.D.. Su última misión infiltrarse como agentes dobles de la organización de Fabio Vicentinni, " +
           "que tomó el nombre de Red Skull, el gran enemigo de Captain America. " },
-      { id: 16, name: 'Captain America' },
+      { id: 16, name: 'Captain America', description: "Cpt. Steven \"Steve\" Rogers también conocido como Captain America, " +
+          "el primer vengador, fue rechazado por el Ejército de los Estados Unidos durante la Segunda Guerra Mundial " +
+          "debido a numerosos problemas de salud. Finalmente se ofreció como voluntario para el Proyecto Renacimiento " +
+          "donde recibió el Suero del Súper Soldado desarrollado por Dr. Abraham Erskine."},
       { id: 17, name: 'Hulk' },
       { id: 18, name: 'Dr Strange' },
       { id: 19, name: 'Superman' },
