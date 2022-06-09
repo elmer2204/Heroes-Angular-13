@@ -18,7 +18,9 @@ export class InMemoryDataService implements InMemoryDbService{
       { id: 14, name: 'Batman', description: "Batman es el superhéroe protector de Gotham, famoso " +
           "por su traje de murciélago y que a pesar de no tener súper poderes es unos de los héroes " +
           "más importantes e influyentes, así como el mejor detective del mundo." },
-      { id: 15, name: 'Spider-man' },
+      { id: 15, name: 'Spider-man', description: "Peter Parker es hijo de Richard y Mary Parker, agentes de la CIA y " +
+          "posteriormente de S.H.I.E.L.D.. Su última misión infiltrarse como agentes dobles de la organización de Fabio Vicentinni, " +
+          "que tomó el nombre de Red Skull, el gran enemigo de Captain America. " },
       { id: 16, name: 'Captain America' },
       { id: 17, name: 'Hulk' },
       { id: 18, name: 'Dr Strange' },
